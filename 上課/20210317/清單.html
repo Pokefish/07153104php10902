@@ -1,5 +1,5 @@
 
-<!-- 清單 -->
+<!-- 清單作業 -->
 
 <!--  HTML 表單來輸入姓名、性別、地址；選擇最高學歷和年收入。 -->
 
@@ -13,15 +13,15 @@
 
      <body>
           <h1>表單製作</h1>
-          <form>
-               <p>姓名：<input type="text" ></p>
+          <form name="details" method="POST" action="form.php">
+               <p>姓名：<input type="text" name="User"></p>
                <p>生理性別：</p>
-               <p><input type="radio" name="sex" value="male">男</p>
-               <p><input type="radio" name="sex" value="female">女</p>
-               <p><input type="radio" name="sex" value="others">其他</p>
-               <p>地址：<textarea></textarea><br></p>
+               <p><input type="radio" name="Sex" value="male">男</p>
+               <p><input type="radio" name="Sex" value="female">女</p>
+               <p><input type="radio" name="Sex" value="others">其他</p>
+               <p>地址：<textarea name="Address"></textarea><br></p>
                <p>學歷：
-                    <select>
+                    <select name="Education">
                          <option>選擇你的最高學歷</option>
                          <option>國小</option>
                          <option>國中</option>
@@ -29,8 +29,18 @@
                          <option>大學</option>
                          <option>碩士</option>
                          <option>博士</option>
-                    </select><br></p>
-
+                    </select><br>
+               </p>
+               <p>年收入
+                    <select name="Yearsalary">
+                         <option>選擇年收入</option>
+                         <option>0～1萬</option>
+                         <option>1萬～5萬</option>
+                         <option>5萬～10萬</option>
+                         <option>10萬～15萬</option>
+                    </select><br>
+               </p>
+                    
                
                <input type="submit">
           </form>
