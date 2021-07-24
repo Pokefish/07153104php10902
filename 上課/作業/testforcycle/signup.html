@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>註冊</title>
+<link rel="stylesheet" type="text/css" href="signup.css"/>
+</head>
+<body>
+    <div id="signup_frame">
+        <p id="text_logo">註冊</p>
+        <form name="signup" method="post" action="signup.php">
+            
+            <p><input type="text" id="username" class="text_field" placeholder="學號" name="userid"/></p>
+            
+            <p><input type="text"  class="text_field" placeholder="姓名" name="username"/></p>
+            <div>
+                <!-- <a id="signup_control" href="signup.php">確認註冊</a> 不行-->
+                <!-- <input type="submit" id="signup_control" href="signup.php">確認註冊</a>  會有個很醜的送出-->
+                <!-- <a onclick="" id=signup_control" href="signup.php">確認註冊</a> js 但我還不會-->
+                <button type="submit" id="signup_control" href="signup.php">確認註冊 </button> 
+                <!-- 可以POST但css很醜 -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>

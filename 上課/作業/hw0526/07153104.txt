@@ -1,0 +1,13 @@
+<?php
+
+     if (file_exists($file)) {   // 看檔案是否存在
+          $fp = fopen($file, "r"); //以唯讀檔案模式開啟
+          $contents = fread($fp, filesize($file)); //讀取整個檔案的內容
+          print "檔案內容: <br/>"; //印出 「檔案內容:」
+          echo nl2br($contents); //印出 檔案內容並且遇到 \n 就換行
+          fclose($fp); // 關閉檔案
+     } else { //檔案如果不存在
+          print "檔案 $file 不存在<br/>";
+     }
+
+?>
