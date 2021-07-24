@@ -6,6 +6,11 @@
 
 * 做出購物車模式網站
 
+## 環境
+
+* XAMPP 8.0.2 
+* VSCode(IDE)
+
 ## 期末專題
 
 https://github.com/cindy861103/109_2_Readcycle
